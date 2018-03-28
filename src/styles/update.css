@@ -1,0 +1,69 @@
+.update_parent {
+    margin: 20px 20%;
+    display: flex;
+    flex-direction: row;
+    width: 60%;
+}
+
+.update_container{
+    width: 80%;
+}
+.update_container input{
+    width: 100%;
+    height: 40px;
+    border-radius: .3em;
+    box-shadow: none !important;
+    font-size: 1.5em;
+    padding-left: 5%;
+    box-sizing: border-box;
+    color: black;
+    font-weight: bold;
+}
+
+.button_container {
+    margin: 10px auto;
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.edit_button {
+    height: 40px;
+    width: 7em;
+    background: #40F99B;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 25PX;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.delete_button {
+    height: 40px;
+    width: 7em;
+    background: #D8D8D8;
+    border-radius: .3em;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-weight: bold;
+}
+
+.image_container {
+    height: 200px;
+    width: 250px;
+    margin-right: 20px;
+    border: 1px solid black;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.37)
+}
+
+.edit_button:hover {
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.37)
+}
+
+.delete_button:hover {
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.37)
+}

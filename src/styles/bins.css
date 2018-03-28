@@ -1,0 +1,44 @@
+.bin_container {
+    display: flex;
+    flex-direction: column;
+}
+
+.empty_bin {
+    height: 60px;
+    width: 60%;
+    background: #FFB8AF;
+    display: flex;
+    margin: 10px auto;    
+    color: Black;
+    padding-left: 12%;
+    box-sizing: border-box;
+    border-radius: .4em;
+    align-items: center;
+    font-size: 25px;
+    font-weight: bold;
+    letter-spacing: 1.5px;
+}
+
+.full_bin {
+    height: 60px;
+    width: 60%;
+    background: #D34735;
+    display: flex;
+    margin: 9px auto;     
+    color: white; 
+    padding-left: 12%;
+    box-sizing: border-box;
+    border-radius: .4em;
+    align-items: center;
+    font-size: 26px;
+    font-weight: bold;
+    letter-spacing: 1.5px
+}
+
+.empty_bin:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.37)
+}
+
+.full_bin:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.37)
+}

@@ -1,0 +1,29 @@
+
+.shelfies {
+  display: flex; 
+  /* align-items: center; */
+  flex-direction: column;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+.shelf {
+  display: flex;
+  align-items: center;
+  padding-left: 13%;
+  width: 60%;
+  height: 60px;
+  background: #D34735;
+  color: white;
+  margin: 0 auto;
+  box-sizing: border-box;
+  border-radius: .3em;
+  font-size: 30px;
+  text-decoration: none;
+  letter-spacing: 1.5px;
+}
+
+.shelf:hover {
+  cursor: pointer;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.37)
+}
