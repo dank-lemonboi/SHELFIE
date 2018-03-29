@@ -22,7 +22,7 @@ export default class Update extends Component {
 
     componentDidMount() {
         axios.get(`/api/update/${this.props.match.params.id}`).then( res => {
-            console.log(res.data);
+            // console.log(res.data);
             this.setState({name: res.data[0].name, price: res.data[0].price, image: res.data[0].image_url})
         })
     }

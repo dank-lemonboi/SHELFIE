@@ -44,7 +44,7 @@ export default class Create extends Component {
           <h3>Name</h3>
           <input className='item_name' onChange={e => this.setState({ name: e.target.value })} />
           <h3>Price</h3>
-          <input className='item_price' onChange={e => this.setState({ price: e.target.value })} />{" "}
+          <input className='item_price' onChange={e => this.setState({ price: e.target.value })} />
           <br />
           <div className='inventory_button' onClick={() => this.addInventory()}>+ Add to Inventory</div>
         </div>

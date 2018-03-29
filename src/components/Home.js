@@ -8,7 +8,7 @@ export default function Home() {
     
     const arr = ['A', 'B', 'C', 'D'];
     let mappedArr = arr.map( (x, i) => {
-        return <Link to={`/api/shelf/${x}`} key={i} style={ {textDecoration: 'none'} }>
+        return <Link to={`/shelf/${x}`} key={i} style={ {textDecoration: 'none'} }>
          <div className='shelf' shelf={x}>
          {`Shelf ${x}`}
          </div>

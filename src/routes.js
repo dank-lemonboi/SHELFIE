@@ -8,8 +8,8 @@ import Update from "./components/Update";
 export default (
   <Switch>
     <Route path="/" component={Home} exact />
-    <Route path="/api/shelf/:id" component={Shelf} />
-    <Route path="/api/create/:id" component={Create} />
-    <Route path="/api/update/:id" component={Update} />
+    <Route path="/shelf/:id" component={Shelf} />
+    <Route path="/create/:id" component={Create} />
+    <Route path="/update/:id" component={Update} />
   </Switch>
 );

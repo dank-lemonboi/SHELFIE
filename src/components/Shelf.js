@@ -17,7 +17,7 @@ export default class Shelf extends Component {
 
   componentDidMount() {
     axios.get(`/api/shelf/${this.props.match.params.id}`).then(res => {
-        console.log(res.data)
+        // console.log(res.data)
          this.setState({
              bins: res.data
          })
@@ -31,9 +31,9 @@ export default class Shelf extends Component {
           return (
           x.name !== null    
          ?
-         <Link to={`/api/update/${x.shelf}${x.bin}`} key={i}  style={{textDecoration: 'none'}} image={this.state.bins[0].image_url}><div className='full_bin'>{`Bin ${x.bin}`}</div></Link>
+         <Link to={`/update/${x.shelf}${x.bin}`} key={i}  style={{textDecoration: 'none'}} image={this.state.bins[0].image_url}><div className='full_bin'>{`Bin ${x.bin}`}</div></Link>
          :
-         <Link to={`/api/create/${x.shelf}${x.bin}`} key={i}  style={{textDecoration: 'none'}}><div className='empty_bin'>+ Add Inventory</div></Link>
+         <Link to={`/create/${x.shelf}${x.bin}`} key={i}  style={{textDecoration: 'none'}}><div className='empty_bin'>+ Add Inventory</div></Link>
           )
       })
     return(
